@@ -5,3 +5,4 @@ RHT_OCP4_MASTER_API=https://api.na46r.prod.ole.redhat.com:6443/
 ../../oc.exe new-project oyimcl-jenkins
 ../../oc.exe new-app jenkins-persistent
 
+../../oc.exe get route -n oyimcl-jenkins jenkins -o jsonpath="{'http://'}{.spec.host}{'\n'}"
