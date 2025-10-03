@@ -1,0 +1,7 @@
+RHT_OCP4_DEV_USER=oyimcl
+RHT_OCP4_DEV_PASSWORD=4769a118f3754686b81d
+RHT_OCP4_MASTER_API=https://api.na46r.prod.ole.redhat.com:6443/
+./oc.exe login -u dncpow -p 528216e936ff410ea29a https://api.na46r.prod.ole.redhat.com:6443/
+../../oc.exe new-project oyimcl-jenkins
+../../oc.exe new-app jenkins-persistent
+
